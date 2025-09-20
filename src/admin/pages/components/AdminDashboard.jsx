@@ -7,15 +7,15 @@ export default function AdminDashboard() {
   const [extraStats, setExtraStats] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/admin/stats")
+    fetch("http://52.23.197.194/api/admin/stats")
       .then((res) => res.json())
       .then((data) => setStats(data));
 
-    fetch("http://localhost:4000/api/admin/top-players")
+    fetch("http://52.23.197.194/api/admin/top-players")
       .then((res) => res.json())
       .then((data) => setTopPlayers(data));
 
-    fetch("http://localhost:4000/api/admin/extra-stats")
+    fetch("http://52.23.197.194/api/admin/extra-stats")
       .then((res) => res.json())
       .then((data) => setExtraStats(data));
   }, []);

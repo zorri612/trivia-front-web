@@ -9,7 +9,7 @@ export default function AdminRegister() {
   const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    const res = await axios.post("http://localhost:4000/api/admin/register", 
+    const res = await axios.post("http://52.23.197.194/api/admin/register", 
       { email, password },
       { headers: { "Content-Type": "application/json" } }
     );
